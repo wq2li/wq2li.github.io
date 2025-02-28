@@ -1,0 +1,6 @@
+theme: jekyll-theme-minimal
+title: "WQ2Li's Blog"
+description: "A personal blog for notes"
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
