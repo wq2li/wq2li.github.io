@@ -26,8 +26,21 @@ $$
 $$
 
 **优化问题**
-目标函数为最小化基站总功率
 
+目标函数为最小化基站总功率，约束条件为每个用户的SINR约束，
+
+$$
+\begin{equation}
+
+\begin{aligned}
+
+    & \min_{\{\mathbf{v}_{k}\}\forall k} \sum_{k=1}^U \|\mathbf{v}_{k}\|_2^2, \quad \text{s.t.} \\
+    & \text{C1}:\quad \frac{\left|\mathbf{h}_{k}^{H} \mathbf{v}_{k} \right|^2}{\sum_{ j \neq k} \left|\mathbf{h}_{k}^{H}\mathbf{v}_{j} \right|^2 + \sigma^2} \geq r_k^{th}.
+    
+\end{aligned}
+
+\end{equation}
+$$
 
 你可以写 **行内数学公式**：
 
