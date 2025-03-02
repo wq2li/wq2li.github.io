@@ -1,0 +1,6 @@
+title: "WQ2Li's Blog"
+description: "A personal blog powered by Jekyll on GitHub Pages."
+theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  math_engine: mathjax  
