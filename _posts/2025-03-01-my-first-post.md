@@ -34,13 +34,16 @@ $$
 
 \begin{aligned}
 
-    & \min_{\{\mathbf{v}_{k}\}\forall k} \sum_{k=1}^U \|\mathbf{v}_{k}\|_2^2, \quad \text{s.t.} \\
-    & \text{C1}:\quad \frac{\left|\mathbf{h}_{k}^{H} \mathbf{v}_{k} \right|^2}{\sum_{ j \neq k} \left|\mathbf{h}_{k}^{H}\mathbf{v}_{j} \right|^2 + \sigma^2} \geq r_k^{th}.
+    & \text{P1}: \,\, \min_{\{\mathbf{w}_{k}\}\forall k} \sum_{k=1}^U \|\mathbf{w}_{k}\|_2^2, \quad \text{s.t.} \\
+    & \text{C1}:\quad \frac{\left|\mathbf{h}_{k}^{H} \mathbf{w}_{k} \right|^2}{\sum_{ j \neq k} \left|\mathbf{h}_{k}^{H}\mathbf{w}_{j} \right|^2 + \sigma^2} \geq \gamma_k.
     
 \end{aligned}
 
 \end{equation}
 $$
+
+
+此问题可以直接由cvx求解
 
 你可以写 **行内数学公式**：
 
