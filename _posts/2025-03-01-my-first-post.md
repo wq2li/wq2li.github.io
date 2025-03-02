@@ -7,6 +7,8 @@ tags: ['sasa','sasaas']
 
 # Math Equations in Jekyll ✏️
 
+考虑一个下行多用户MISO系统，基站配有 $ N $ 个天线，
+
 你可以写 **行内数学公式**：
 
    000  Euler’s formula: $ [1] \equiv [3] $ : It follows from the monotone gradient condition for convexity of $ g(x) $ , i.e., $ g(x) $  is convex if and only if $ (\nabla g(x) - \nabla g(y))^T(x-y) \ge 0,~\forall x,y. $  SINR is $ \gamma_{s,k}=\mathbf{h}{s,k}^{H} $ 
