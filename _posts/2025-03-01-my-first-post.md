@@ -13,6 +13,12 @@ $$
 \mathbf{s}=\sum_{i=1}^N \mathbf{w}_i x_i
 $$
 
+用户$k$ 的接收信号为
+
+$$
+\mathbf{y}_k = \mathbf{h}_k^H \mathbf{s}
+$$
+
 你可以写 **行内数学公式**：
 
    000  Euler’s formula: $ [1] \equiv [3] $ : It follows from the monotone gradient condition for convexity of $ g(x) $ , i.e., $ g(x) $  is convex if and only if $ (\nabla g(x) - \nabla g(y))^T(x-y) \ge 0,~\forall x,y. $  SINR is $ \gamma_{s,k}=\mathbf{h}{s,k}^{H} $ 
