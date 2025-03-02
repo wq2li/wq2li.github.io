@@ -7,7 +7,7 @@ tags: ['sasa','sasaas']
 
 # Math Equations in Jekyll ✏️
 
-考虑一个下行多用户MISO系统，基站配有 $ M $ 个天线，服务 $ N $ 个单天线用户。用户 $K$ 的符号为 $x_k$，给其的precoding为 $ \mathbf{v}_k \in \mathbb{C} M \times 1 $ 
+考虑一个下行多用户MISO系统，基站配有 $ M $ 个天线，服务 $ N $ 个单天线用户。用户 $K$ 的符号为 $x_k$，给其的precoding为 $ \mathbf{v}_k \in \mathbb{C}^{M \times 1} $ 
 
 你可以写 **行内数学公式**：
 
