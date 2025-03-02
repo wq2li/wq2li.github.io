@@ -42,6 +42,20 @@ $$
 \end{equation}
 $$
 
+rearrange约束$\text{C1}$，得到
+
+$$
+\frac{1}{\gamma_k \sigma^2} \left| h_k^H w_k \right|^2 \geq \sum_{j \neq k} \frac{1}{\sigma^2} \left| h_k^H w_j \right|^2 + 1
+$$
+
+由于对波束向量进行相位旋转不改变模值，所以可以直接取实部，即
+
+$$
+\Leftrightarrow \frac{\frac{1}{\sqrt{\gamma_k \sigma^2}} \Re \left( h_k^H w_k \right)}
+{\sqrt{\sum\limits_{j \neq k} \frac{1}{\sigma^2} \left| h_k^H w_j \right|^2 + 1}}
+\geq 1.
+$$
+
 
 此问题可以直接由cvx求解
 
