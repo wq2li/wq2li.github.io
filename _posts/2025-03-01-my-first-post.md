@@ -10,13 +10,13 @@ tags: ['sasa','sasaas']
 考虑一个下行多用户MISO系统，基站配有 $ M $ 个天线，服务 $ N $ 个单天线用户。用户 $K$ 的符号为 $x_k$，给其的precoding为 $ \mathbf{w}_k \in \mathbb{C}^{M \times 1} $。基站发出的信号为
 
 $$
-\mathbf{s}=\sum_{i=1}^N \mathbf{w}_i x_i
+\mathbf{s}=\sum_{i=1}^N \mathbf{w}_i x_i  \tag{1}
 $$
 
 用户$k$ 的接收信号为
 
 $$
-\mathbf{y}_k = \mathbf{h}_k^H \mathbf{s}
+\mathbf{y}_k = \mathbf{h}_k^H \mathbf{s}  \tag{2}
 $$
 
 基站到用户$k$的信道为 $\mathbf{w}_k \in \mathcal{C}^{M\times 1}$ ， 用户 $k$ 的SINR 为
