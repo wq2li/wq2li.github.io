@@ -20,10 +20,7 @@ E = mc^2
 $$
 
 $$
-\begin{equation}
-\label{sinrfeasible}
 \gamma_{s,k}=\frac{\left|\mathbf{h}_{s,k}^{H} \mathbf{v}_{s,k} \right|^2}{\sum_{j\in \mathcal{S}_s, j \neq k} \left|\mathbf{h}_{s,k}^{H}\mathbf{v}_{s,j} \right|^2 + \sigma^2},
-\end{equation}
 $$
 ### 📌 **更多公式示例**
 1. 级数求和：
