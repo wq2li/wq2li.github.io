@@ -56,50 +56,7 @@ $$
 \geq 1.
 $$
 
-这是一个二阶锥约束，因此可以直接求解。cvx代码如下
-
-```
-clear all;
-clc;
-
-K = 4; % 用户数量
-N = 4; % 基站天线数
-var = 1e-3; % 噪声方差
-
-% 生成瑞利衰落信道矩阵 H（K x N 维）
-H = (1/sqrt(2*K)) * (randn(N,K) + 1i * randn(N,K));
-
-% 定义 SINR 目标范围
-gamma_dB_range = linspace(30, 50, 20); % 从 0 dB 到 30 dB
-minimum_power_values = zeros(size(gamma_dB_range)); % 存储功率结果
-
-for idx = 1:length(gamma_dB_range)
-    gamma = db2mag(gamma_dB_range(idx)); % 线性刻度 SINR
-    gammavar=gamma*var;
-
-    cvx_begin quiet
-        variable W(N,K) complex; % 预编码矩阵 W (N x K)
-        minimize(norm(W, 'fro')) % 最小化 Frobenius 范数
-
-        subject to
-            for i = 1:K
-                imag(H(:,i)' * W(:,i)) == 0; % 约束虚部为 0
-                real ( H(: ,i)' *W(:, i ))>= sqrt ( gammavar ) *norm([1  H(:,i)'* W(:,[1:i-1 i+1:K])/sqrt(var)  ]);
-            end
-    cvx_end
-
-    % 计算最小传输功率
-    minimum_power_values(idx) = norm(W, 'fro')^2;
-end
-
-% 绘制优化结果
-figure;
-plot(gamma_dB_range, minimum_power_values, '-o', 'LineWidth', 2);
-xlabel('SINR 目标值 (dB)');
-ylabel('最小传输功率');
-title('不同 SINR 目标值下的最小传输功率');
-grid on;
-```
+这是一个二阶锥约束，因此可以直接求解。
 
 
  **优化问题写法2**：
