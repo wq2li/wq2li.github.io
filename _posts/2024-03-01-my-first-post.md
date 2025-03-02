@@ -9,7 +9,7 @@ tags: ['sasa','sasaas']
 
 你可以写 **行内数学公式**：
 
-   000  Euler’s formula: $ [1] \equiv [3] $ : It follows from the monotone gradient condition for convexity of $ g(x) $ , i.e., $ g(x) $  is convex if and only if $ (\nabla g(x) - \nabla g(y))^T(x-y) \ge 0,~\forall x,y. $
+   000  Euler’s formula: $ [1] \equiv [3] $ : It follows from the monotone gradient condition for convexity of $ g(x) $ , i.e., $ g(x) $  is convex if and only if $ (\nabla g(x) - \nabla g(y))^T(x-y) \ge 0,~\forall x,y. $  SINR is $ \gamma_{s,k}=\frac{\left|\mathbf{h}{s,k}^{H} \mathbf{v}{s,k} \right|^2}{\sum_{j\in \mathcal{S}s, j \neq k} \left|\mathbf{h}{s,k}^{H}\mathbf{v}_{s,j} \right|^2 + \sigma^2} $ 
 
 ```
 N = 8;                                                                      % Number of users
