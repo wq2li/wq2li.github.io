@@ -11,7 +11,18 @@ tags: ['sasa','sasaas']
 
    000  Euler’s formula: $ [1] \equiv [3] $ : It follows from the monotone gradient condition for convexity of $ g(x) $ , i.e., $ g(x) $  is convex if and only if $ (\nabla g(x) - \nabla g(y))^T(x-y) \ge 0,~\forall x,y. $
 
-
+```
+N = 8;                                                                      % Number of users
+M = 5;                                                                      % Number of antennas at each satellite
+K=M;
+lambda = 0.1;                                                                 % Weighting factor for alpha penalty
+mu=0.01;
+P = 10;                                                                     % Power constraint
+N0_dBm_Hz = -173;                                                           % Noise power spectral density in dBm/Hz
+B = 1e6;                                                                    % Bandwidth in Hz (adjust if necessary)
+N0_W_Hz = 10^((N0_dBm_Hz - 30) / 10);                                       % Convert N0 from dBm/Hz to Watts/Hz
+sigma2 = 1;                                                       % noise power
+```
 
 
 你也可以写 **块级数学公式**：
