@@ -9,7 +9,8 @@ tags: ['sasa','sasaas']
 
 你可以写 **行内数学公式**：
 
-   000  Euler’s formula: $ \gamma_{s,k} = \frac{\left| \mathbf{h}_{s,k}^{H} \mathbf{v}_{s,k} \right|^2}{\sum_{j \neq k} \left| \mathbf{h}_{s,k}^{H} \mathbf{v}_{s,j} \right|^2 + \sigma^2} $。$ [1] \equiv [3] $ : It follows from the monotone gradient condition for convexity of $ g(x) $ , i.e., $ g(x) $  is convex if and only if $ (\nabla g(x) - \nabla g(y))^T(x-y) \ge 0,~\forall x,y. $
+   000  Euler’s formula: $ [1] \equiv [3] $ : It follows from the monotone gradient condition for convexity of $ g(x) $ , i.e., $ g(x) $  is convex if and only if $ (\nabla g(x) - \nabla g(y))^T(x-y) \ge 0,~\forall x,y. $
+
 
 
 
