@@ -9,7 +9,7 @@ tags: ['sasa','sasaas']
 
 你可以写 **行内数学公式**：
 
-   000  Euler’s formula: $ \gamma_{s,k} = \frac{\left| \mathbf{h}_{s,k}^{H} \mathbf{v}_{s,k} \right|^2}{\sum_{j \neq k} \left| \mathbf{h}_{s,k}^{H} \mathbf{v}_{s,j} \right|^2 + \sigma^2} $。
+   000  Euler’s formula: $ \begin{equation} \gamma_{s,k} = \frac{\left| \mathbf{h}_{s,k}^{H} \mathbf{v}_{s,k} \right|^2}{\sum_{j \neq k} \left| \mathbf{h}_{s,k}^{H} \mathbf{v}_{s,j} \right|^2 + \sigma^2} \end{equation} $。
 
 
 你也可以写 **块级数学公式**：
