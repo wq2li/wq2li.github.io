@@ -103,6 +103,7 @@ grid on;
 
 
  **优化问题写法2**：
+ 
 Alternaatively，可以引入变量 $t$, 
 
 $$
@@ -110,9 +111,9 @@ $$
 
 \begin{aligned}
 
-    & \text{P1}: \,\, \min_{\{\mathbf{w}_{k}\}\forall k} t, \quad \text{s.t.} \\
+    & \text{P1}: \,\, \min_{\{\mathbf{w}_{k},t\}\forall k} t, \quad \text{s.t.} \\
     & \text{C1}: \quad \sum_{k=1}^N \|\mathbf{w}_{k}\|_2^2 \leq t, \\
-    & \text{C2}: \quad \Im \left( h_k^H w_k \right)=0, \,\, \forall k \\
+    & \text{C2}: \quad \Im \left( \mathbf{h}_k^H \mathbf{w}_k \right)=0, \,\, \forall k \\
     & \text{C3}:\quad \frac{\left|\mathbf{h}_{k}^{H} \mathbf{w}_{k} \right|^2}{\sum_{ j \neq k} \left|\mathbf{h}_{k}^{H}\mathbf{w}_{j} \right|^2 + \sigma^2} \geq \gamma_k.
     
 \end{aligned}
